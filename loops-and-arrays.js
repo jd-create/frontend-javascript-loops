@@ -6,10 +6,11 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 let i = 0;
-console.log(names)
+console.log(names);
 for (i = 0; i < names.length; i++){
-console.log(names[i] + "je")
+names[i] = names[i] + "je"
 }
+console.log(names);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
@@ -24,10 +25,11 @@ console.log(names[i] + "je")
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+console.log(numbers);
 for (let p = 0; p < numbers.length; p++) {
-    console.log(numbers[p] * 3);
+    numbers[p] = (numbers[p] * 3);
 }
-
+console.log(numbers);
 // Verwachte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
@@ -43,6 +45,13 @@ for (let p = 0; p < numbers.length; p++) {
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+let q = 0;
+console.log(squares);
+for(q = 0; q < squares.length; q++) {
+    squares[q] = Math.pow(squares[q], 3);
+}
+console.log(squares);
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
