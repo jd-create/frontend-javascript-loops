@@ -20,7 +20,18 @@ for (let i = 0; i < 3; i++) {
 // loop...
 // klaar!
  // ==========================================
+const yell = "loop";
+const finishingYell = "klaar!";
+let i = 0;
+for (i = 0; i < 5; i++) {
+    if (i < 4) {
 
+        console.log(yell);
+    } else
+
+        console.log(finishingYell)
+
+};
 
 
 // ==========================================
@@ -35,7 +46,15 @@ for (let i = 0; i < 3; i++) {
 
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over..
 // ==========================================
+const equal = " is even";
+const odd = " is oneven";
+let p = 0; //i is already declared
 
+for (p = 0; p <= 15; p++) {
+    if (p % 2 === 0) {
+        console.log(p + equal);
+    } else console.log(p + odd);
+}
 
 
 // ==========================================
