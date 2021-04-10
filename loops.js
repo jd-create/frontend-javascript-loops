@@ -5,7 +5,10 @@
 // Hoera!
 // Hoera!
 // ==========================================
-
+const call = "Hoera!"
+for (let i = 0; i < 3; i++) {
+    console.log(call);
+}
 
 
 // ==========================================
@@ -17,7 +20,18 @@
 // loop...
 // klaar!
  // ==========================================
+const yell = "loop";
+const finishingYell = "klaar!";
+let i = 0;
+for (i = 0; i < 5; i++) {
+    if (i < 4) {
 
+        console.log(yell);
+    } else
+
+        console.log(finishingYell)
+
+};
 
 
 // ==========================================
@@ -32,7 +46,15 @@
 
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over..
 // ==========================================
+const equal = " is even";
+const odd = " is oneven";
+let p = 0; //i is already declared
 
+for (p = 0; p <= 15; p++) {
+    if (p % 2 === 0) {
+        console.log(p + equal);
+    } else console.log(p + odd);
+}
 
 
 // ==========================================
@@ -50,3 +72,47 @@
 // >> 9
 // ==========================================
 
+//1e manier
+let q = 0;
+const oneGreaterThan = "> ";
+const twoGreaterThan = ">> ";
+
+for (q = 1; q <= 9; q++) {
+        if (q >= 6) {
+        console.log(twoGreaterThan + q);
+    } if (q >=3 && q < 6) {
+        console.log(oneGreaterThan + q);
+    } if (q < 3) {
+        console.log(q);
+    }
+}
+
+
+//2e manier: for loop opgeteld
+for (q = 1; q < 10; q++) {
+    if (q > 3) {
+        process.stdout.write(">");
+    }
+    if (q > 6) {
+        process.stdout.write(">");
+    }
+    process.stdout.write("" + q + "\n");
+}
+
+
+//3e manier: switch met getallen
+for (q = 1; q <= 9; q++) {
+    switch (q) {
+        case 1: case 2: case 3:
+            console.log(q)
+            break;
+        case 4: case 5: case 6:
+            console.log(oneGreaterThan + q)
+            break;
+        case 7: case 8: case 9:
+            console.log(twoGreaterThan + q)
+            break;
+        default:
+            console.log("out of range")
+    }
+}
