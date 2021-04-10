@@ -19,11 +19,14 @@ console.log(names[i] + "je")
 
 // ==========================================
 // Opdracht 2
-// Schrijf een script dat ieder getal in bovenstaande array met 3 vermenigvuldigd.
+// Schrijf een script dat ieder getal in onderstaande array met 3 vermenigvuldigd.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+for (let p = 0; p < numbers.length; p++) {
+    console.log(numbers[p] * 3);
+}
 
 // Verwachte uitkomsten:
 // Vóór het script zie je de originele waardes:
